@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Medical Question-Answering, Dataset">
+  <meta name="description" content="ExGra-Med: Extended Context Graph Alignment for Medical Vision-Language Models">
+
+  <title>ExGra-Med</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.0.18/index.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="vendor/image-zoom.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="assets/icon.png">
+
+  <script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
+  <script async src="vendor/image-zoom.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img class="logo" src="assets/logo.png" alt="logo">
+          <h1 class="title publication-title is-bold">
+            <span>ExGra-Med: Extended Context Graph Alignment for Medical Vision-Language Models</span>
+          </h1>
+          <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
+            <p>
+            <img src="assets/dfki_logo.png" alt="University Logo" style="height: 100px">
+            <img src="assets/mpi_logo.jpg" alt="University Logo" style="height: 100px">
+            <img src="assets/Stanford_logo.png" alt="University Logo" style="height: 100px">
+            <img src="assets/UCSD_logo.png" alt="University Logo" style="height: 100px">
+            <img src="assets/university-of-stuttgart-logo.png" alt="University Logo" style="height: 100px">
+            <br>
+            <img src="assets/eth-zurich_logo.jpg" alt="University Logo" style="height: 60px">
+            <img src="assets/imprs-is-logo.jpg" alt="University Logo" style="height: 60px">
+            </p>
+          </div>
+          <div class="is-size-6 publication-author">
+            <span class="author-block">
+              <a href="https://www.com">Duy M. H. Nguyen</a><sup>1,2,3&#9993;</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Nghiem T. Diep</a><sup>3&ast;</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Trung Q. Nguyen</a><sup>3,4&ast;</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Hoang-Bao Le</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Tai Nguyen</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Tien Nguyen</a><sup>5,6</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">TrungTin Nguyen</a><sup>8</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Nhat Ho</a><sup>9</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Pengtao Xie</a><sup>10</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Roger Wattenhofer</a><sup>11</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">James Zou</a><sup>12</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Daniel Sonntag</a><sup>3,7&dagger;</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.com">Mathias Niepert</a><sup>1,2&dagger;&#9993;</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Max Planck Research School for Intelligent Sytems (IMPRS-IS),</span>
+            <span class="author-block"><sup>2</sup>University of Stuttgart,</span>
+            <span class="author-block"><sup>3</sup>German Research Centre for Artificial Intelligence (DFKI),</span>
+            <span class="author-block"><sup>4</sup>Technical University of Munich,</span>
+            <span class="author-block"><sup>5</sup>University Medical Center Gottingen,</span>
+            <span class="author-block"><sup>6</sup>Max Planck Institute for Multidisciplinary Sciences,</span>
+            <span class="author-block"><sup>7</sup>Oldenburg University,</span>
+            <span class="author-block"><sup>8</sup>University of Queensland,</span>
+            <span class="author-block"><sup>9</sup>University of Texas at Austin,</span>
+            <span class="author-block"><sup>10</sup>University of California San Diego,</span>
+            <span class="author-block"><sup>11</sup>ETH Zurich,</span>
+            <span class="author-block"><sup>12</sup>Stanford University</span>
+          </div>
+
+          <div class="is-size-5 publication-role">
+            <span class="author-block"><sup>&ast;</sup><i>Co-second contribution</i></span>
+            <span class="author-block"><sup>&dagger;</sup><i>Co-senior authors</i></span>
+            <span class="author-block"><sup>&#9993;</sup><i>Corresponding Author</i></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" href="https://arxiv.org/abs/2410.02615" target="_blank">
+                  <i class="button-icon far fa-paper-plane"></i>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" href="https://github.com/duyhominhnguyen/Exgra-Med" target="_blank">
+                  <i class="button-icon fa-brands fa-github"></i>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" href="https://github.com/duyhominhnguyen/Exgra-Med" target="_blank">
+                  <i class="button-icon fa-regular fa-lightbulb"></i>
+                  <span>Demo</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" href="https://github.com/duyhominhnguyen/Exgra-Med" target="_blank">
+                  <i class="button-icon fa-regular fa-hourglass-half"></i>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title">Abstract</h2>
+          <div class="content has-text-justified">
+            <p class="is-size-5" style="padding-bottom: 30px;">
+              State-of-the-art medical multi-modal LLMs (med-MLLMs), such as LLaVA-Med and BioMedGPT, 
+              primarily depend on scaling model size and data volume, with training driven largely by
+              autoregressive objectives. However, we reveal that this approach can lead to weak 
+              vision-language alignment, making these models overly dependent on costly
+              instruction-following data. To address this, we introduce ExGra-Med, a novel multi-graph
+              alignment framework that jointly aligns images, instruction responses, and extended
+              captions in the latent space, advancing semantic grounding and cross-modal coherence.
+              To scale to large LLMs (e.g., LLaMa-7B), we develop an efficient end-to-end training
+              scheme using black-box gradient estimation, enabling fast and scalable optimization.
+              Empirically, ExGra-Med matches LLaVA-Med's performance using just 10% of pre-training
+              data, achieving a 20.13% gain on VQA-RAD and approaching full-data performance.
+              It also outperforms strong baselines like BioMedGPT and RadFM on visual chatbot and
+              zero-shot classification tasks, demonstrating its promise for efficient, high-quality
+              vision-language integration in medical AI.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="figures/exgramed.jpg" alt="Overview" data-zoom-image />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title">Key Results</h2>
+          <div class="content has-text-justified">
+            <p class="is-size-5" style="padding-bottom: 30px;">
+              ✅ Reveals the data inefficiency of autoregressive modeling — LLaVA-Med exhibits
+              a significant performance drop when pre-trained on limited data, even after full
+              fine-tuning on downstream tasks.
+            </p>
+            <p class="is-size-5" style="padding-bottom: 30px;">
+              ✅ Matches LLaVA-Med's performance on Medical VQA using only 10% of the pre-training
+              data, demonstrating the data efficiency of EXGRA-MED.
+            </p>
+            <p class="is-size-5" style="padding-bottom: 30px;">
+              ✅ Surpasses several SOTA medical multi-modal LLMs when pre-trained on the full PMC-15M
+              dataset (100%) with LLaMA-7B, across diverse tasks: <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;1. Medical Visual Question Answering (VQA) <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;2. Medical Visual Chatbot <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;3. Zero-shot Image Classification (as a VQA task) <br>
+            </p>
+          </div>
+          <img src="figures/exgra_med_result.png" alt="Result" data-zoom-image />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title">More Section</h2>
+          <p class="is-size-5" style="padding-bottom: 30px;">
+            More contents
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title">Citation</h3>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <pre><code>
+            @article{nguyen2025exgra,
+                title={EXGRA-MED: Extended Context Graph Alignment for Medical Vision- Language Models},
+                author={Duy M. H. Nguyen, Nghiem T. Diep, Trung Q. Nguyen, Hoang-Bao Le, Tai Nguyen, Tien Nguyen, TrungTin Nguyen, Nhat Ho, Pengtao Xie, Roger Wattenhofer, James Zou, Daniel Sonntag, Mathias Niepert},
+                journal={arXiv preprint arXiv:2410.02615},
+                year={2025}
+            }
+        </code></pre>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content">
+            <p>This website is modified from <a href="https://nerfies.github.io/" target="_blank">Nerfies's Project Page</a>. Source code is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
